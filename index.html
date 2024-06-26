@@ -1,0 +1,74 @@
+<!-- <html>
+    <head>
+        <title>融智医康</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <h1>融智医康互联网医院远程实时视频对话</h1>
+
+    <div id="buttons">
+        <input id="zero-RoomID" type="text" placeholder="请输入摄像头UID" maxlength="40"/>
+        <button id="joinBtn" type="button">加入</button>
+        <button id="leavBtn" type="button">离开</button>
+    </div>
+
+    <div id="videos">
+        <video id="localVideo" autoplay muted playsinline>本地窗口</video>
+        <video id="remotelVideo" autoplay playsinline>远端窗口</video>
+    </div>
+    <script src="./client/js/main.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>融智医康</title>
+    <style>
+        /* 用于居中文本的样式 */
+        .centered-text {
+    position: fixed;
+    top: 50%; /* 将元素垂直居中 */
+    left: 50%; /* 将元素水平居中 */
+    transform: translate(-50%, -50%); /* 使用transform来水平和垂直居中 */
+    /* background-color: rgba(255, 0, 0, 0.5); 背景颜色，根据需要调整 */
+    padding: 10px; /* 文本内边距，根据需要调整 */
+    font-size: 24px; /* 文本字体大小，根据需要调整 */
+    color: #f80505; /* 文本颜色，根据需要调整 */
+}
+    </style>
+    
+</head>
+<body>
+    <h1>融智医康互联网医院远程实时视频对话</h1>
+    <div id="buttons">
+        <input id="zero-RoomID" type="text" placeholder="请输入摄像头UID" maxlength="40"/>
+        <button id="joinBtn" type="button">加入</button>
+        <button id="leavBtn" type="button">离开</button>
+    </div>
+
+    <div id="videos">
+        <video id="localVideo" autoplay muted playsinline>本地窗口</video>
+        <video id="remotelVideo" autoplay playsinline>远端窗口</video>
+    </div>
+
+    <!-- 用于显示连接状态的文本 -->
+    <div class="centered-text" id="statusText"></div>
+    <!-- <button onclick="showAndHideText()"></button> -->
+
+    <script src="./client/js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="./client/js/adapter.js"></script>
+    <!-- <script src="./js/adapter.js"></script> -->
+    <!-- <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> -->
+    
+</body>
+</html>
+
+
+
+
